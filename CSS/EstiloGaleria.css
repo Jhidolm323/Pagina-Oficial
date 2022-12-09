@@ -1,0 +1,142 @@
+
+@font-face {
+    font-family: "FcBarcelona";
+    src: url(../Fuentes/Barcelona19-20.ttf);
+    }
+
+h1 {font-family: "FcBarcelona";
+         font-size: 4rem;
+         color: yellow;}
+
+body {
+    background-color: #181834;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 10px 0;
+}
+
+.contenedor .galeria-contenedor {
+    background-color: #fff;
+    width: 100%;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.galeria-contenedor h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+.linea {background: yellow;
+    height: 5px; 
+    width: 100%;
+    display: block;
+}
+.galeria {
+    padding: 20px;
+}
+.galeria .lightbox img {
+    opacity: 0.50;
+    width: 90%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.galeria .lightbox img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.galeria img {
+    border-radius: 4px;
+}
+.clear{clear: both;}
+
+.grid2{display:grid;
+    grid-template-columns:50% 50%;}
+.container {
+    opacity: 0.50;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.9%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.container:hover {opacity: 1;
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding:5%;
+}
+
+.Pie-pagina {width: 100%;
+    background-color: 24,24,52;
+}
+.Pie-pagina .grupo-1 {width: 100%;
+             max-width: 1200px;
+             margin: auto;
+             display: grid;
+             grid-template-columns: repeat(3,1fr); 
+             grid-gap: 50px;
+             padding: 45px 0px;}
+
+.Pie-pagina .grupo-1 .box figure {width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;   
+                   }
+
+.Pie-pagina .grupo-1 .box figure img {width: 250px;}
+
+.Pie-pagina .grupo-1 .box h2 {color:aqua;
+                   letter-spacing: 2px;
+                   margin-bottom: 25px;
+                   font-size: 20px;}
+.Pie-pagina .grupo-1 .box p {color:wheat ;
+                   margin-bottom: 10px;}
+.Pie-pagina .grupo-1 .red-social a {display: inline-block;
+                           text-decoration: none;
+                           width: 45px;
+                           height: 45px;
+                           line-height: 45px;
+                           color: white;
+                           margin-right: 10px;
+                           background-color: #0d2033;
+                           text-align: center;
+                           transition: all 300ms ease;
+                           }
+.Pie-pagina .grupo-1 .red-social a:hover {color: yellow;}
+
+.Pie-pagina .grupo-2{background-color: 24,24,52;
+           padding: 15px 10px;
+           text-align: center;
+           color: white;}
+.Pie-pagina .grupo-2 small {font-size: 1.2rem;}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .contenedor .galeria-contenedor {
+        border-radius: 0;
+    }
+}
+@media only screen and (width<=800px){
+   .grid2 {grid-template-columns: repeat(1,1fr);}}

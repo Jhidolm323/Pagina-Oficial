@@ -1,0 +1,515 @@
+/******estilo para la web de artistas favoritos**********/
+
+
+/****** Estilo general***********/
+
+@font-face {
+    font-family: "Fc Barcelona";
+    src: url(../Fuentes/Barcelona19-20.ttf);
+    }
+@font-face {
+        font-family: "Letraminuscula";
+        src: url(../Fuentes/Montserrat-VariableFont_wght.ttf);
+        }   
+    
+    .section {padding: 6% 0;}
+
+    body {background-color: rgb(167, 53, 45);
+            margin: 0;
+            padding: 0;}
+    
+    #container{width: 80%;
+            margin:auto;
+             background-color: rgb(24, 24, 52);}
+    
+    html {scroll-behavior: smooth;}
+    
+    /********NAV*******/
+    
+    nav {position: sticky;/***Esto es para fijar la barra arriba****/
+            top: 0;
+            z-index: 99;}
+    
+    nav ul li.logo{
+    flex: 1;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;}
+    
+    .topnav {font-family: "Fc Barcelona";
+            overflow: hidden;
+            background-color:rgb(24, 24, 52) ;}
+    
+    .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 1.5em}
+    
+    
+    .topnav a:hover {
+            background-color: rgb(229, 255, 0);
+            color: black;}
+    
+    
+    .topnav .icon {
+            display: none;}
+    
+    @media screen and (max-width: 1110px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+            float: right;
+            display: block;
+            }
+    }
+    
+    @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;}
+    
+    .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;}
+    }
+    
+    
+    
+    
+    /********Estilo de la hero section*********/
+    #hero {background-size: cover;
+            background-position: 43%;
+            position: relative;}
+    
+    #hero h1{position: absolute;
+            top: 30px;
+            left: 50px;
+            font-size: 2.3em;
+            font-family: "Fc Barcelona";
+            color: rgb(12, 0, 29);}
+    
+            .mySlides, .slideshow-container, .Anterior, .Siguiente, .Siguiente, .Anterior:hover, .Siguiente:hover, .text, .numbertext, .active, .dot:hover, .fade, .dot {box-sizing:border-box}
+    
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            }
+            
+            /* Hide the images by default */
+            .mySlides {
+            display: none;
+            }
+            
+            #primera {display: block;}
+    
+            /* Next & previous buttons */
+            .Anterior, .Siguiente {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .Siguiente {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .Anterior:hover, .Siguiente:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+            
+            /* Caption text */
+            .text {position: absolute;
+                    top: 30px;
+                    left: 50px;
+                    font-size: 2.3em;
+                    font-family: west1;
+                    color: rgb(12, 0, 29);}
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+            
+            
+            /* The dots/bullets/indicators */
+            .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+            
+            .active, .dot:hover {
+            background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+            
+            @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+    
+    
+    
+    
+    
+    /******************Historia******************/
+    
+    #CreaciónBarsa {font-family: "Fc Barcelona";
+            color: white;
+            padding: 40px 0;
+            margin: 40px 0;
+            }
+    
+    #CreaciónBarsa h1{font-family: "Fc Barcelona";
+                    color: yellow;
+                    text-align: center;
+                    font-size: 4.2em;}
+    
+    #CreaciónBarsa p{
+        padding-top: 10%;
+        font-size: 1.5em;
+            text-align: center;}
+    
+    .mitad {width: 50%;
+            padding-right: 2%;
+            float: left;
+            box-sizing: border-box;}
+    
+    
+    #izquierda{padding-bottom: 20%;
+        padding: 3%;}
+    
+    #LogBarsa {padding-top: 12%;
+        display: block;
+            margin: auto;
+            width: 100%;
+            }
+    
+    .clear{clear: both;}
+    
+    
+    #PrimeraEuropa {font-family: "Fc Barcelona";
+            color: white;
+            margin: 40px 0;
+            padding: 40px 0;
+            }
+    
+    #PrimeraEuropa h1{font-family: "Fc Barcelona";
+            color: yellow;
+            text-align: center;
+            font-size: 3.2em}
+    
+    #PrimeraEuropa p{font-size: 1.5em;
+            text-align: center;
+            padding-left: 10%;}
+    
+    #Copa1992 {
+            padding-left: 4%;
+            margin: auto;
+            width: 100%;
+            }
+            
+
+     
+        
+    /**************CARDS*************/
+
+    #BarsaCard h1 {font-family: "Fc Barcelona";
+         color: white;
+         text-align: center;
+         font-size: 3.2em;
+         color: yellow;        
+        }
+    #BarsaCard3 h1 {font-family: "Fc Barcelona";
+        color: white;
+        text-align: center;
+        font-size: 3.2em;
+        color: yellow;        
+        }
+
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+        transition: 3s; 
+        padding: 5%;
+        }
+      
+      /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      .card3 {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+        transition: 3s; 
+        padding: 5%;
+        }
+      
+      /* On mouse-over, add a deeper shadow */
+    .card3:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+
+      /* Add some padding inside the card container */
+      .container {
+        text-align: center;
+        padding: 2px;
+        background-color: rgb(55, 53, 145);
+      }
+      .container h4 {
+        font-family: "Fc Barcelona";
+        letter-spacing: 3px;
+        color: white;}
+
+      .container p {font-family: "Letraminuscula";}
+
+    .card img {      
+        width: 100%;
+        height: 300px;
+        border-radius: 30%;
+        opacity: 0.75;
+        transition: 3s ;
+      }
+      
+    .card3 img {
+        padding: 1%;
+        width: 100%;
+        height: 300px;
+        opacity: 0.75;
+        transition: 3s ;
+      }
+      
+    .card img:hover {opacity: 50;}
+    
+    .card:hover {
+        box-shadow: 0 4px  8px 0 rgba(0, 0, blue, alpha);
+      }
+      /**********PRIMER GRID***********/
+    .grid1 {
+        font-size: 2rem;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    /**********SEGUNDO GRID***********/
+    .grid2 {
+        font-size: 2rem;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    /*********TERCER GRID**********/
+    .grid3 {
+        font-size: 2rem;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+    /**********PRIMER COL***********/
+    .col1 {padding: 8%;
+           font-size: 100%;}
+    /**********BOTON************/
+   .boton {text-decoration: none;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: rgb(71, 99, 150);
+                border-radius: 5px;
+                padding: 5px 10px;
+              }
+     .boton:hover {background-color: #273147;
+                    color: rgb(235, 227, 227);}
+
+     /**********SEGUNDO COL***********/
+        .col2 {padding: 8%;
+        font-size: 100%;}
+
+
+     
+    /***********TECER COL**************/
+    .col3 {padding: 8%;
+        font-size: 100%;}
+   
+    
+    /************Camp Nou***********/
+#CampNou {font-family: "Fc Barcelona";
+        color: white;
+        margin: 40px 0;
+        padding: 40px 0;
+        }
+
+#CampNou h1{font-family: "Fc Barcelona";
+        color: yellow;
+        text-align: center;
+        font-size: 3.2em}
+
+#CampNou p{font-size: 1.5em;
+        text-align: center;
+        padding-left: 10%;}
+
+    #mitad img {
+        padding-top: 6.5%;
+        padding-left: 4%;}
+
+    #mitad {width: 50%;
+        float: left;    
+    }    
+    
+    .container {
+            position: relative;
+            width: 100%;}
+    
+    .imagen {
+            margin-top: 10%;
+            display: block;
+            width: 100%;
+            height: auto;}
+  
+    
+    
+/************GOOGLE MAPS***********/
+    .container-maps {
+        position: relative;
+        overflow: hidden;
+        width: 94%;
+        padding-top: 35%; 
+}
+                         
+        /* Then style the iframe to fit in the container div with full height and width */
+    .responsive-iframe {
+        padding-top: 10%;
+        padding-left: 4%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+             }
+    
+    /******FOOTER**********/
+    .Pie-pagina {width: 100%;
+                 background-color: 24,24,52;
+    }
+    .Pie-pagina .grupo-1 {width: 100%;
+                          max-width: 1200px;
+                          margin: auto;
+                          display: grid;
+                          grid-template-columns: repeat(3,1fr); 
+                          grid-gap: 50px;
+                          padding: 45px 0px;}
+
+   .Pie-pagina .grupo-1 .box figure {width: 100%;
+                                     height: 100%;
+                                     display: flex;
+                                     justify-content: center;
+                                     align-items: center;   
+                                }
+
+   .Pie-pagina .grupo-1 .box figure img {width: 250px;}
+
+   .Pie-pagina .grupo-1 .box h2 {color:aqua;
+                                letter-spacing: 2px;
+                                margin-bottom: 25px;
+                                font-size: 20px;}
+   .Pie-pagina .grupo-1 .box p {color:wheat ;
+                                margin-bottom: 10px;}
+   .Pie-pagina .grupo-1 .red-social a {display: inline-block;
+                                        text-decoration: none;
+                                        width: 45px;
+                                        height: 45px;
+                                        line-height: 45px;
+                                        color: white;
+                                        margin-right: 10px;
+                                        background-color: #0d2033;
+                                        text-align: center;
+                                        transition: all 300ms ease;
+                                        }
+   .Pie-pagina .grupo-1 .red-social a:hover {color: yellow;}
+   
+   .Pie-pagina .grupo-2{background-color: 24,24,52;
+                        padding: 15px 10px;
+                        text-align: center;
+                        color: white;}
+   .Pie-pagina .grupo-2 small {font-size: 1.2rem;}
+
+    /****************media queries**********/
+    @media only screen and (width<=1000px){
+            #LogBarsa {width: 80%;}
+            #mitad {width: 100%;}
+            .imagen {width: 90%;}
+            #PrimeraEuropa{width: 100%;}
+            #copa1992 {width: 100%;}
+            .grid3 {grid-template-columns: 50% 50%;} 
+            .grid1 {grid-template-columns:50% 50%;}
+            .grid2 {grid-template-columns:50% 50%;}
+            .card {width: 90%;
+                   font-size: 1.5rem;}           
+            
+    }
+    
+    
+    
+    @media only screen and (width<=600px) {
+           .Pie-pagina .grupo-1 {width: 90%;
+                grid-template-columns: repeat(1,1fr); 
+                grid-gap: 30px;
+                padding: 35px 0px;}
+            #LogBarsa{width: 80%;}
+            #copa1992 {padding: 100%;
+                width: 100%;}
+            #mitad {width: 90%;}
+            .grid3 {grid-template-columns: 100%;}
+            .grid2 {grid-template-columns: 100%;}
+            .grid1 {grid-template-columns:100%;}
+            .card {width: 100%;
+                font-size: 1rem;}
+            .card3 {width: 100%;
+                font-size: 1rem;}
+            .card3 img { border-radius: 25%;}      
+            #container {width: 100%;}
+            #both {width:80%;}
+    }
